@@ -5,16 +5,159 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/appBackground"
     tools:context="com.nissi.nissi.AppSettings">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/backButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On"
+        android:id="@+id/autoSearchSwitch"
+        android:layout_above="@+id/backButton"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:layout_marginBottom="70dp"
+        android:textColor="#FFFFFFFF"
+        android:textOff="Off"
+        android:textOn="On"
+        android:showText="false"
+        android:singleLine="false"
+        android:splitTrack="false"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="App Settings"
+        android:text="@string/autoSearchText"
+        android:id="@+id/autoSearchSwitchInfo"
+        android:textColor="#FFFFFFFF"
+        android:layout_above="@+id/autoSearchSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/autoSearchSwitchInfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/languageLinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/languageInfo"
+            android:layout_above="@+id/LinearLayout"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Choose a language"
+            android:textColor="#FFFFFFFF"
+            android:layout_gravity="center_horizontal"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/languageGroup"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:checked="true"
+                android:id="@+id/engButton"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFFFF"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espanol"
+                android:id="@+id/espButton"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFFFF"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/languageLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/displayResultLinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listOrMapTextView"
+            android:layout_above="@+id/LinearLayout"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="Default to this type of display for church results"
+            android:textColor="#FFFFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/listOrMapRadioGroup"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List"
+                android:checked="true"
+                android:id="@+id/listRadioButton"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFFFF"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:id="@+id/mapRadioButton"
+                android:layout_gravity="bottom"
+                android:textColor="#FFFFFFFF"
+                android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
         android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:textColor="#FFFFFFFF"
+        android:textSize="40dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
 </RelativeLayout>

@@ -1,6 +1,8 @@
 package com.nissi.nissi;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mFindChurchImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                vibrate();
                 Intent findChurchIntent = new Intent(MainActivity.this, FindChurchActivity.class);
                 startActivity(findChurchIntent);
             }
@@ -35,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mAppSettingImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                vibrate();
                 Intent appSettingIntent = new Intent(MainActivity.this, AppSettings.class);
                 startActivity(appSettingIntent);
             }
@@ -43,9 +47,16 @@ public class MainActivity extends AppCompatActivity {
         mInfoImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                vibrate();
                 Intent infoIntent = new Intent(MainActivity.this, InfoActivity.class);
                 startActivity(infoIntent);
             }
         });
+
+    }
+
+    public void vibrate() {
+        Vibrator vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(10);
     }
 }

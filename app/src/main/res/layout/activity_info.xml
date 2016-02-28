@@ -5,18 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FF343434"
     tools:context=".InfoActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/infoBackButtonView"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Made by me!"
-        android:id="@+id/textView3"
+        android:text="Please send all feedback, comments, suggestions, and other correspondence to ChrisBenitez28@gmail.com"
+        android:id="@+id/contactInfoTextView"
+        android:layout_above="@+id/infoBackButtonView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFE4E4E4"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by: NapCorps, Inc. and Swankrain Studios \nProgrammer: Daniel Santos\nGraphic Design: Mark McCollom"
+        android:id="@+id/developByTextView"
+        android:textColor="#FFE4E4E4"
+        android:textSize="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Owner: Christopher Benitez"
+        android:id="@+id/onwerTextView"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFE4E4E4"
+        android:textSize="20dp"
+        android:layout_alignTop="@+id/versionTextView"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:id="@+id/versionTextView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#FFE4E4E4"
+        android:layout_alignTop="@+id/appNameTextView"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:id="@+id/appNameTextView"
+        android:textColor="#FFE4E4E4"
+        android:textSize="40dp"
+        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"/>
+        android:layout_marginTop="20dp"/>
 </RelativeLayout>
