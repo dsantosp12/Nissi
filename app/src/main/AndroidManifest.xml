@@ -37,11 +37,17 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key"/>
 
-        <activity android:name=".AppSettings">
+        <activity
+            android:name=".AppSettings"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".InfoActivity">
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".FindChurchActivity">
+        <activity
+            android:name=".FindChurchActivity"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 

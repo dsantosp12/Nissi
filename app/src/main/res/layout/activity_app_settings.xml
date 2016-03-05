@@ -14,7 +14,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="@string/back_button"
         android:id="@+id/backButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -23,15 +23,15 @@
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="On"
+        android:text="@string/auto_search_switch_state_on"
         android:id="@+id/autoSearchSwitch"
         android:layout_above="@+id/backButton"
         android:layout_centerHorizontal="true"
         android:checked="true"
         android:layout_marginBottom="70dp"
         android:textColor="#FFFFFFFF"
-        android:textOff="Off"
-        android:textOn="On"
+        android:textOff="@string/auto_search_switch_state_off"
+        android:textOn="@string/auto_search_switch_state_on"
         android:showText="false"
         android:singleLine="false"
         android:splitTrack="false"
@@ -40,7 +40,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/autoSearchText"
+        android:text="@string/auto_search_switch_info"
         android:id="@+id/autoSearchSwitchInfo"
         android:textColor="#FFFFFFFF"
         android:layout_above="@+id/autoSearchSwitch"
@@ -66,7 +66,7 @@
             android:layout_above="@+id/LinearLayout"
             android:layout_centerHorizontal="true"
             android:textSize="20sp"
-            android:text="Choose a language"
+            android:text="@string/language_info"
             android:textColor="#FFFFFFFF"
             android:layout_gravity="center_horizontal"/>
 
@@ -80,7 +80,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="English"
+                android:text="@string/eng_radio"
                 android:checked="true"
                 android:id="@+id/engButton"
                 android:layout_gravity="bottom"
@@ -90,7 +90,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Espanol"
+                android:text="@string/esp_radio"
                 android:id="@+id/espButton"
                 android:layout_gravity="bottom"
                 android:textColor="#FFFFFFFF"
@@ -115,7 +115,7 @@
             android:layout_above="@+id/LinearLayout"
             android:layout_centerHorizontal="true"
             android:textSize="20sp"
-            android:text="Default to this type of display for church results"
+            android:text="@string/list_or_map_info"
             android:textColor="#FFFFFFFF"
             android:layout_gravity="center_horizontal"
             android:textAlignment="center"/>
@@ -130,7 +130,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="List"
+                android:text="@string/list_radio"
                 android:checked="true"
                 android:id="@+id/listRadioButton"
                 android:layout_gravity="bottom"
@@ -140,7 +140,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Map"
+                android:text="@string/map_radio"
                 android:id="@+id/mapRadioButton"
                 android:layout_gravity="bottom"
                 android:textColor="#FFFFFFFF"
@@ -151,11 +151,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Options"
-        android:id="@+id/textView2"
+        android:text="@string/settings_title"
+        android:id="@+id/title"
         android:textStyle="bold"
         android:textColor="#FFFFFFFF"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>

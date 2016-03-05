@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GLOBALS -->
+    <string name="back_button">Volver</string>
+
+    <!-- Main Activity -->
+    <string name="find_church_button">Buscar</string>
+    <string name="app_setting_button">Configuración</string>
+    <string name="information_button">Información</string>
+
+    <!-- Information Activity -->
+    <string name="owner_info">Dueño: Christopher Benitez</string>
+    <string name="developed_by">Desarrollado por: NapCorps, Inc. and
+        Swankrain Studios \Programador: Daniel Santos\nGraphic
+        Diseño Gráfico: Mark McCollom
+    </string>
+    <string name="contact_info">Por favor, envíe todos sus comentarios,
+        observaciones, sugerencias y otro tipo de correspondencias a
+        Help4Nissi@gmail.com
+    </string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Opciones</string>
+    <string name="list_or_map_info">Pantalla predeterminada cerca</string>
+    <string name="list_radio">Lista</string>
+    <string name="map_radio">Mapa</string>
+    <string name="auto_search_switch_info">Iglesias cerca por omisión</string>
+    <string name="auto_search_switch_state_on">Prendido</string>
+    <string name="auto_search_switch_state_off">Apagado</string>
+    <string name="language_info">Selecione un lenguage</string>
+    <string name="eng_radio">English</string>
+    <string name="esp_radio">Español</string>
+</resources>

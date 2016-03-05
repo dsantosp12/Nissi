@@ -15,7 +15,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="@string/back_button"
         android:id="@+id/infoBackButtonView"
         android:layout_marginBottom="30dp"
         android:layout_alignParentBottom="true"
@@ -24,22 +24,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Please send all feedback, comments, suggestions, and other correspondence to ChrisBenitez28@gmail.com"
         android:id="@+id/contactInfoTextView"
         android:layout_above="@+id/infoBackButtonView"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:textColor="#FFE4E4E4"
-        android:textSize="20dp"
-        android:textAlignment="center"/>
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:phoneNumber="true"
+        android:text="@string/contact_info"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developed by: NapCorps, Inc. and Swankrain Studios \nProgrammer: Daniel Santos\nGraphic Design: Mark McCollom"
+        android:text="@string/developed_by"
         android:id="@+id/developByTextView"
         android:textColor="#FFE4E4E4"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"/>
@@ -47,21 +48,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Owner: Christopher Benitez"
         android:id="@+id/onwerTextView"
         android:layout_centerHorizontal="true"
         android:textColor="#FFE4E4E4"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_alignTop="@+id/versionTextView"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:text="@string/owner_info"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Version 1.0"
+        android:text="@string/version"
         android:id="@+id/versionTextView"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="#FFE4E4E4"
         android:layout_alignTop="@+id/appNameTextView"
         android:layout_marginTop="70dp"/>
@@ -72,7 +73,7 @@
         android:text="@string/app_name"
         android:id="@+id/appNameTextView"
         android:textColor="#FFE4E4E4"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"

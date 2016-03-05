@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Nissi</string>
     <string name="title_activity_map">Map</string>
-    <string name="autoSearchText">Automatically search for nearby churches on launch</string>
+    <string name="version">Version 1.0</string>
 </resources>

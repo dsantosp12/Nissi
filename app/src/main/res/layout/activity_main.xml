@@ -42,7 +42,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Find A Church"
+                android:text="@string/find_church_button"
                 android:id="@+id/findChurchTextView"
                 android:textStyle="bold"
                 android:paddingTop="100dp"
@@ -89,7 +89,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="App Settings"
+                    android:text="@string/app_setting_button"
                     android:id="@+id/appSettingsTextView"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
@@ -123,7 +123,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Information"
+                    android:text="@string/information_button"
                     android:id="@+id/appInfoTextView"
                     android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
