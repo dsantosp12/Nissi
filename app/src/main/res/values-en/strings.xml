@@ -2,6 +2,7 @@
 <resources>
     <!-- GLOBALS -->
     <string name="back_button">Back</string>
+    <string name="ok_button">Ok</string>
 
     <!-- Main Activity -->
     <string name="find_church_button">Find A Church</string>
@@ -33,5 +34,24 @@
     <string name="language_info">Choose a language</string>
     <string name="eng_radio">English</string>
     <string name="esp_radio">Español</string>
+
+    <!-- AlertDialog Network Error Text -->
+    <string name="network_error_title">No Connection</string>
+    <string name="network_error_body">Unable to search for churches at this time.
+        Please, check your connection status.
+    </string>
+
+    <!-- AlertDialog Location Error Text -->
+    <string name="location_error_title">Location Error</string>
+    <string name="location_error_body">Please go to App Settings and turn
+        Location Services on for Nissi.
+    </string>
+
+    <!-- AlertDialog Location Error Text -->
+    <string name="server_error_title">Sever Error</string>
+    <string name="server_error_body">We are sorry, the server have some error,
+        try again.
+    </string>
+
 
 </resources>
