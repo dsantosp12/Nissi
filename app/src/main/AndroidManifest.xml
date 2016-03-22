@@ -2,30 +2,39 @@
 <manifest package="com.nissi.nissi"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
+<!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.VIBRATE"/>
+<uses-permission android:name="android.permission.CALL_PHONE"/>
 
-    <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-        <!--
+    <activity
+        android:name=".ui.IntroActivity"
+        android:screenOrientation="portrait">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+
+    <activity
+        android:name=".ui.MainActivity"
+        android:screenOrientation="portrait">
+    </activity>
+    <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
              Note that the API key is linked to the encryption key used to sign the APK.
@@ -33,22 +42,30 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key"/>
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="@string/google_maps_key"/>
 
-        <activity
-            android:name=".AppSettings"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".InfoActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".FindChurchActivity"
-            android:screenOrientation="portrait">
-        </activity>
-    </application>
+    <activity
+        android:name=".ui.AppSettingsActivity"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".ui.InfoActivity"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".ui.FindChurchActivity"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".ui.MakerInformationActivity"
+        android:screenOrientation="portrait">
+    </activity>
+    <activity
+        android:name=".ui.FindChurchListActivity"
+        android:screenOrientation="portrait">
+    </activity>
+</application>
 
 </manifest>

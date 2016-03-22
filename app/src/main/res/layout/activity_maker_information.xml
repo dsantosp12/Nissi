@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/appBackground"
+    tools:context=".ui.MakerInformationActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/churchImageView"
+        android:src="@drawable/church_watermark"
+        android:longClickable="false"
+        android:layout_alignParentTop="true"
+        android:maxHeight="30dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="ChurchWatermark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/churchNameTextView"
+        android:layout_below="@+id/churchImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FFFFFFFF"
+        android:textAlignment="center"
+        android:text="Loading..."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressTextView"
+        android:layout_below="@+id/churchNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addressTextView"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="138dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/website_button"
+                android:id="@+id/websiteButtonMakerInfo"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/back_button"
+                android:id="@+id/backButtonMakerInfo"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="138dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/call_button"
+                android:id="@+id/callButtonMakerInfo"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/direction_button"
+                android:id="@+id/directionsButtonMakerInfo"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/markerInfoProgressBar"
+        android:layout_alignTop="@+id/churchNameTextView"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

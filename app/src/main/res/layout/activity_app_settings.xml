@@ -9,13 +9,13 @@
     android:paddingRight="20dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/appBackground"
-    tools:context="com.nissi.nissi.AppSettings">
+    tools:context=".ui.AppSettingsActivity">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back_button"
-        android:id="@+id/backButton"
+        android:id="@+id/backButtonMakerInfo"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"/>
@@ -23,9 +23,8 @@
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/auto_search_switch_state_on"
         android:id="@+id/autoSearchSwitch"
-        android:layout_above="@+id/backButton"
+        android:layout_above="@+id/backButtonMakerInfo"
         android:layout_centerHorizontal="true"
         android:checked="true"
         android:layout_marginBottom="70dp"
@@ -53,60 +52,10 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/autoSearchSwitchInfo"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/languageLinearLayout">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/languageInfo"
-            android:layout_above="@+id/LinearLayout"
-            android:layout_centerHorizontal="true"
-            android:textSize="20sp"
-            android:text="@string/language_info"
-            android:textColor="#FFFFFFFF"
-            android:layout_gravity="center_horizontal"/>
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/languageGroup"
-            android:layout_gravity="center_horizontal">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/eng_radio"
-                android:checked="true"
-                android:id="@+id/engButton"
-                android:layout_gravity="bottom"
-                android:textColor="#FFFFFFFF"
-                android:layout_weight="1"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/esp_radio"
-                android:id="@+id/espButton"
-                android:layout_gravity="bottom"
-                android:textColor="#FFFFFFFF"
-                android:layout_weight="1"/>
-
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:layout_above="@+id/languageLinearLayout"
         android:layout_centerHorizontal="true"
-        android:id="@+id/displayResultLinearLayout">
+        android:id="@+id/displayResultLinearLayout"
+        android:layout_above="@+id/autoSearchSwitchInfo">
 
         <TextView
             android:layout_width="wrap_content"

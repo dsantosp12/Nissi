@@ -3,6 +3,9 @@
     <!-- GLOBALS -->
     <string name="back_button">Back</string>
     <string name="ok_button">Ok</string>
+    <string name="app_name">Nissi</string>
+    <string name="title_activity_map">Map</string>
+    <string name="version">Version 1.0</string>
 
     <!-- Main Activity -->
     <string name="find_church_button">Find A Church</string>
@@ -35,6 +38,15 @@
     <string name="eng_radio">English</string>
     <string name="esp_radio">Español</string>
 
+    <!-- FindChurchActivity -->
+    <string name="show_map">Show Map</string>
+    <string name="show_list">Show List</string>
+
+    <!-- Marker Information Activity -->
+    <string name="website_button">Website</string>
+    <string name="call_button">Call Church</string>
+    <string name="direction_button">Directions</string>
+
     <!-- AlertDialog Network Error Text -->
     <string name="network_error_title">No Connection</string>
     <string name="network_error_body">Unable to search for churches at this time.
@@ -53,5 +65,18 @@
         try again.
     </string>
 
+    <!-- AlertDialog Call Phone Error Text -->
+    <string name="phone_error_title">Phone Call Permission Denied</string>
+    <string name="phone_error_body">Please go to App Settings and turn
+    Phone Services on for Nissi.</string>
+
+    <!-- AlertDialog Default Error Text -->
+    <string name="default_error_title">Unknown Error</string>
+    <string name="default_error_body">We are sorry, we have some error,
+        try again.
+    </string>
+
+    <!-- List View of Places -->
+    <string name="no_places_found">There were no places found.</string>
 
 </resources>

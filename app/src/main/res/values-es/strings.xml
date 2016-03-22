@@ -3,6 +3,9 @@
     <!-- GLOBALS -->
     <string name="back_button">Volver</string>
     <string name="ok_button">Aceptar</string>
+    <string name="app_name">Nissi</string>
+    <string name="title_activity_map">Mapa</string>
+    <string name="version">Versión 1.0</string>
 
     <!-- Main Activity -->
     <string name="find_church_button">Buscar</string>
@@ -32,6 +35,15 @@
     <string name="eng_radio">English</string>
     <string name="esp_radio">Español</string>
 
+    <!-- Marker Information Activity -->
+    <string name="website_button">Visite la página</string>
+    <string name="call_button">Llame a la iglesia</string>
+    <string name="direction_button">Direcciones</string>
+
+    <!-- FindChurchActivity -->
+    <string name="show_map">Mapa</string>
+    <string name="show_list">Lista</string>
+
     <!-- AlertDialog Network Error Text -->
     <string name="network_error_title">No Tiene Conneción</string>
     <string name="network_error_body">No se puede buscar las iglesias en este momento.
@@ -49,5 +61,19 @@
     <string name="server_error_body">Lo sentimos, el servidor tiene un problema,
         trate otravez.
     </string>
+
+    <!-- AlertDialog Call Phone Error Text -->
+    <string name="phone_error_title">Uso de Teléfono Denegado</string>
+    <string name="phone_error_body">Porfavor, vaya a Ajutes de aplicación
+        y ponga servicios de telefono para Nissi.</string>
+
+    <!-- AlertDialog Default Error Text -->
+    <string name="default_error_title">Error</string>
+    <string name="default_error_body">Lo sentimos, encontramos un error,
+        trate otravez.
+    </string>
+
+    <!-- List View of Places -->
+    <string name="no_places_found">No se pudo encontrar ninguna información.</string>
 
 </resources>

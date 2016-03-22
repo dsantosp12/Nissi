@@ -8,8 +8,8 @@
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FF343434"
-    tools:context=".InfoActivity">
+    android:background="@color/appBackground"
+    tools:context=".ui.InfoActivity">
 
 
     <Button
@@ -29,7 +29,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:textColor="#FFE4E4E4"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textAlignment="center"
         android:phoneNumber="true"
         android:text="@string/contact_info"/>
@@ -40,7 +40,7 @@
         android:text="@string/developed_by"
         android:id="@+id/developByTextView"
         android:textColor="#FFE4E4E4"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textAlignment="center"/>
@@ -51,7 +51,7 @@
         android:id="@+id/onwerTextView"
         android:layout_centerHorizontal="true"
         android:textColor="#FFE4E4E4"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_alignTop="@+id/versionTextView"
         android:layout_marginTop="40dp"
         android:text="@string/owner_info"/>

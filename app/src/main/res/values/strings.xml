@@ -1,5 +1,81 @@
 <resources>
+    <!-- GLOBALS -->
+    <string name="back_button">Back</string>
+    <string name="ok_button">Ok</string>
     <string name="app_name">Nissi</string>
     <string name="title_activity_map">Map</string>
     <string name="version">Version 1.0</string>
+
+    <!-- Main Activity -->
+    <string name="find_church_button">Find A Church</string>
+    <string name="app_setting_button">App Setting</string>
+    <string name="information_button">Information</string>
+
+    <!-- Information Activity -->
+    <string name="owner_info">Owner: Christopher Benitez</string>
+    <string name="developed_by">Developed by: NapCorps, Inc. and
+        Swankrain Studios \nProgrammer: Daniel Santos\nGraphic
+        Design: Mark McCollom
+    </string>
+    <string name="contact_info">Please send all feedback,
+        comments, suggestions, and other correspondence to
+        Help4Nissi@gmail.com
+    </string>
+
+    <!-- Settings Activity -->
+    <string name="settings_title">Options</string>
+    <string name="list_or_map_info">Default to this type of display
+        for church results</string>
+    <string name="list_radio">List</string>
+    <string name="map_radio">Map</string>
+    <string name="auto_search_switch_info">Automatically search for
+        nearby churches on launch
+    </string>
+    <string name="auto_search_switch_state_on">On</string>
+    <string name="auto_search_switch_state_off">Off</string>
+    <string name="language_info">Choose a language</string>
+    <string name="eng_radio">English</string>
+    <string name="esp_radio">Español</string>
+
+    <!-- FindChurchActivity -->
+    <string name="show_map">Show Map</string>
+    <string name="show_list">Show List</string>
+
+    <!-- Marker Information Activity -->
+    <string name="website_button">Website</string>
+    <string name="call_button">Call Church</string>
+    <string name="direction_button">Directions</string>
+
+    <!-- AlertDialog Network Error Text -->
+    <string name="network_error_title">No Connection</string>
+    <string name="network_error_body">Unable to search for churches at this time.
+        Please, check your connection status.
+    </string>
+
+    <!-- AlertDialog Location Error Text -->
+    <string name="location_error_title">Location Error</string>
+    <string name="location_error_body">Please go to App Settings and turn
+        Location Services on for Nissi.
+    </string>
+
+    <!-- AlertDialog Location Error Text -->
+    <string name="server_error_title">Sever Error</string>
+    <string name="server_error_body">We are sorry, the server have some error,
+        try again.
+    </string>
+
+    <!-- AlertDialog Call Phone Error Text -->
+    <string name="phone_error_title">Phone Call Permission Denied</string>
+    <string name="phone_error_body">Please go to App Settings and turn
+    Phone Services on for Nissi.</string>
+
+    <!-- AlertDialog Default Error Text -->
+    <string name="default_error_title">Unknown Error</string>
+    <string name="default_error_body">We are sorry, we have some error,
+        try again.
+    </string>
+
+    <!-- List View of Places -->
+    <string name="no_places_found">There were no places found.</string>
+
 </resources>

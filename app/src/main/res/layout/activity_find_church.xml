@@ -9,15 +9,13 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/appBackground"
-    tools:context=".FindChurchActivity">
+    tools:context=".ui.FindChurchActivity">
 
-    <ToggleButton
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:textOn="@string/list_radio"
-        android:textOff="@string/map_radio"
-        android:id="@+id/listOrMap"
+        android:text="@string/show_list"
+        android:id="@+id/showListButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
 
@@ -29,31 +27,31 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/listOrMap"
+        android:layout_above="@+id/showListButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/homeImageView"
+        android:id="@+id/homeMapImageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/home_image"
-        android:layout_toStartOf="@+id/listOrMap"
-        android:layout_toLeftOf="@+id/listOrMap"
+        android:layout_toStartOf="@+id/showListButton"
+        android:layout_toLeftOf="@+id/showListButton"
         android:layout_below="@+id/map"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/settingsImageView"
+        android:id="@+id/settingsMapImageView"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:src="@drawable/settings_image"
-        android:layout_toRightOf="@+id/listOrMap"
-        android:layout_toEndOf="@+id/listOrMap"
+        android:layout_toRightOf="@+id/showListButton"
+        android:layout_toEndOf="@+id/showListButton"
         android:layout_below="@+id/map"/>
 
 </RelativeLayout>
